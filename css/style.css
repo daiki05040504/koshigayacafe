@@ -1,0 +1,277 @@
+body {
+  color: #082b48;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+width {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #082b48;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ヘッダー */
+header {
+  padding: 20px 0px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-title{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-right {
+  float: right;
+}
+
+.clear::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.header-nav-item {
+  float: left;
+  margin-left: 50px;
+}
+
+.header-nav-item a{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 58px;
+  /* line-heightを使うことで高さを揃える */
+}
+
+.top {
+  background-size: cover;
+}
+
+.PCimg {
+  margin: 0 auto;
+}
+
+.SPimg {
+  display: none;
+}
+
+
+/* section */
+.section{
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+
+/* about */
+.about-left {
+  float: left;
+  width: 48%;
+}
+.about-right {
+  float: right;
+  width: 48%;
+}
+
+.about-right-koshigaya{
+  line-height: 2;
+}
+
+/* course */
+
+.course {
+  background-color: #fcfce3;
+}
+.course-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course-item {
+  width: 30%;
+  margin-bottom: 40px;
+}
+
+/* contact */
+.contact-message {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="email"] {
+  width: 600px;
+  border: 3px solid #082b48;
+  display: block;
+  margin: auto;
+  padding: 15px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 20px 60px;
+  display: inline;
+  background-color: #082b48;
+  color: #fff ;
+  font-size: 24px;
+  border-radius: 4px;
+  border: none;
+}
+
+.btn-register {
+  background-color: #FADC72;
+  display: block;
+  margin: auto;
+}
+
+.btn:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* footer */
+footer{
+color: #e3fcf4;
+padding: 20px 0;
+background-color: #082b48;
+}
+
+.copyright {
+float: right;
+font-size: 12px;
+} 
+
+
+/* スマホ */
+
+@media only screen and (max-width:767px){
+
+  .clear::after{
+    content: none;
+  }
+  /* .header */
+.header-left {
+  float: none;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.header-right {
+  float: none;
+}
+
+.header-nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav-item {
+  margin:0px 6px;
+}
+
+.header-nav-item a{
+  font-size: 12px;
+}
+
+/* top */
+.top {
+  padding: 0px 0;
+}
+
+.PCimg {
+  display: none;
+}
+
+.SPimg {
+  display: block;
+  margin: 0 auto
+}
+
+.top-title {
+  font-size: 32px;
+}
+.top-subtitle {
+  font-size: 14px;
+}
+
+.section{
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section P{
+  font-size: 14px;
+}
+
+.about-left {
+  float: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.about-right {
+  float: none;
+  width: 100%;
+}
+
+/* course */
+.course-item {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.course-wrapper {
+  flex-wrap: wrap;
+}
+
+.course-item {
+  width: 100%;
+  text-align: center;
+}
+
+/* .contact */
+input[type="email"], input[type="text"] {
+  width: 100%;
+}
+
+.copyright {
+  font-size: 10px;
+  float: none;
+  text-align: center;
+}
+}
